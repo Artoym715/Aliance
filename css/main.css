@@ -1,0 +1,155 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: orange;
+	--text: #333;
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--userfont: roboto-st, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
+@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	background-color: #EFEFEF;
+  	padding: 15px;
+}
+
+/* USER STYLES */
+
+.image {
+	max-width: 100%;
+	margin-bottom: var(--bs-gutter-x);
+	border-radius: 4px;
+}
+
+.accent {
+	color: var(--accent);
+	font-weight: bold;
+}
+
+
+.container {
+  max-width: 375px;
+  margin: auto;
+  border-radius: 20px;
+  background: #EFEFEF;
+  box-shadow: 0px 0px 30px 0px rgba(121, 121, 121, 0.25);
+ }
+ .row{
+	max-width: 300px;
+  	margin: auto;
+ }
+
+.header {
+	color: #fff;
+	padding: 41px 45px 139px;
+	border-radius: 0px 0px 90px 90px;
+	background: linear-gradient(0deg, rgba(51, 18, 18, 0.60) 0%, rgba(51, 18, 18, 0.60) 100%), url("../images/header-bg.png") no-repeat center / cover;
+ }
+ .hello {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: normal;
+ }
+ .hello-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: normal;  
+ }
+ .user {
+	margin-top: -79px;
+	text-align: center;
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+	padding-bottom: 20px;
+ }
+ .user-avatar {
+	margin-top: -43px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #FFF;
+ }
+ .user-name {
+	margin-top: 8px;
+	margin-bottom: 4px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: normal;
+ }
+ .user-description {
+	color: #797777;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: normal; 
+	margin-top: 4px;
+ }
+ .card {
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding: 20px;
+ }
+ .buttons {
+	display: flex;
+	justify-content: space-between;
+	max-width: 260px;
+	margin: auto;
+	gap: 10px;
+ }
+ .button {
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	flex-shrink: 1;
+	width: 100%;
+	border-radius: 5px;
+	text-decoration: none;
+	color:#FFF;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: normal;
+	gap:10px;
+	margin-bottom: 6px;
+ }
+ .button.vk {
+	background: #07F;
+ }
+ .button.tg {
+	background: #229ED9;
+ }
+ .button.hh {
+	background-color: #d6001c;
+ }
