@@ -85,17 +85,20 @@ position: relative;
 	top: 0;
 	z-index: 2;
 	border-bottom: 1px solid rgba(235, 235, 240, 0.20);
-	transition: background-color 0.2s;
+	transition: background-color 0.2s, height 0.2s;
 }
 .navber-light{
 	background-color:#fff;
 	color:#292D33;
+	height: 74px;
 }
 .navber-light .header-logo-path{
 	fill: #292D33;
 }
 .header-logo {
-	padding: 25px 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 50px;
 	border-right: 1px solid rgba(235, 235, 240, 0.20);
 }
 .header-nav {
@@ -106,8 +109,7 @@ position: relative;
 	padding: 0 50px;
 	margin: 0;
 }
-.header-nav-item {
-}
+
 .header-nav-link {
 	text-decoration: none;
 	font-size: 16px;
