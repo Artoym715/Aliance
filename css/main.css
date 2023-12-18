@@ -55,6 +55,7 @@ body {
 /* USER STYLES */
 
 .header {
+	padding-top: 94px;
 	min-height: 100vh;
 }
 .header-image{
@@ -80,6 +81,9 @@ position: relative;
 	color: #fff;
 	position: fixed;
 	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
 	border-bottom: 1px solid rgba(235, 235, 240, 0.20);
 }
 .header-logo {
