@@ -142,7 +142,7 @@ position: relative;
 	line-height: 160%;
 	color: #fff;
 	background: #3A71D1;
-	padding: 25px 60px;
+	padding: 25px 50px;
 	gap: 10px;
 	border: none;
 	cursor: pointer;
@@ -169,6 +169,8 @@ position: relative;
 	font-weight: 400;
 	line-height: 120%;
 	margin: 30px 0;
+	letter-spacing: 0.8px;
+	word-spacing: -1.6px;
 }
 .header-text{
 	max-width: 720px;
@@ -190,6 +192,7 @@ position: relative;
 }
 .header-features-item {
 	padding: 30px 50px;
+	width: 300px;
 	border: 1px solid rgba(235, 235, 240, 0.20);
 }
 .header-features-item:not(:last-child){
@@ -199,6 +202,7 @@ position: relative;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 160%;
+	margin-bottom: 0;
 	margin-top: 20px; 
 }
 .section{
