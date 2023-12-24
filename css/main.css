@@ -58,6 +58,9 @@ body {
 	padding-top: 94px;
 	min-height: 100vh;
 }
+.mobile-menu{
+	display: none;
+}
 .header-image{
 background-image: url(../img/header-image.png);
 background-size: cover;
