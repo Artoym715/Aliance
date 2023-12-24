@@ -105,6 +105,9 @@ position: relative;
 	width: 8.75rem;
 	height: 2.75rem;
 }
+.phone-icon{
+	fill: #5C8EE6;
+}
 
 .header-nav {
 	display: flex;
@@ -137,6 +140,9 @@ position: relative;
 }
 .header-button {
 	height: 100%;
+}
+.header-button .button-icon{
+	display: none;
 }
 .button {
 	display: flex;
