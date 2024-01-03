@@ -56,7 +56,6 @@ body {
 
 .header {
 	padding-top: 94px;
-	min-height: 100vh;
 }
 .mobile-menu{
 	display: none;
@@ -198,6 +197,7 @@ position: relative;
 
 .header-features {
 	display: flex;
+	align-items: stretch;
 	min-height: 10.5rem;
 	padding: 0;
 	margin-top: 6.25rem;
@@ -208,11 +208,10 @@ position: relative;
 .header-features-item {
 	padding: 1.875rem 3.125rem;
 	width: 18.75rem;
+	height: auto;
 	border: 1px solid rgba(235, 235, 240, 0.20);
 }
-.header-features-item:not(:last-child){
-	border-right: none;
-}
+
 .header-features-text {
 	font-size: 1rem;
 	font-weight: 400;
@@ -289,4 +288,18 @@ position: relative;
 	background:#5C8EE5;
 	width: 2.5rem;
 	margin-right: 1.25rem;
+}
+
+.slider-buttons{
+	display: none;
+	height: 44px;
+}
+.slider-button-prev, .slider-button-next{
+	height: 100%;
+	flex-basis: 50%;
+	border: 1px solid rgba(235, 235, 240, 0.20);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
 }

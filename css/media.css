@@ -40,6 +40,9 @@ html{
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
+	.slider-buttons{
+		display: flex;
+	}
 }
 
 /* md <= Large (lg) */
@@ -180,11 +183,29 @@ html{
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
+	.container{
+		max-width: 55rem;
+	}
+	.header-title{
+		font-size: 4rem;
+	}
+	.header-content{
+		padding-top: 3rem;
+	}
 
 }
 
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
+	.container{
+		max-width: 90%;
+	}
+	.header-title{
+		font-size: 2rem;
+	}
+	.header-content{
+		padding-top: 1rem;
+	}
 
 }
 

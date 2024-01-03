@@ -35,3 +35,39 @@ mMenuToggle.addEventListener("click", (event) => {
 	event.preventDefault();
 	menu.classList.contains('is-open') ? closeMenu() : openMenu();
 });
+
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	slidesPerView: 5,
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.slider-button-next',
+		prevEl: '.slider-button-prev',
+	},
+	// Responsive breakpoints
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+		},
+		// when window width is >= 576px
+		576: {
+			slidesPerView: 2,
+		},
+		// when window width is >= 768px
+		768: {
+			slidesPerView: 3,
+		},
+		// when window width is >= 1024px
+		1024: {
+			slidesPerView: 4,
+		},
+		// when window width is >= 1200px
+		1200: {
+			slidesPerView: 5,
+		}
+	},
+
+});
