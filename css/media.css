@@ -46,6 +46,9 @@ html{
 	.steps-buttons{
 		display: flex;
 	}
+	.card{
+		flex-basis: 50%;
+	}
 }
 
 /* md <= Large (lg) */
@@ -207,6 +210,9 @@ html{
 	}
 	.header-content{
 		padding-top: 1rem;
+	}
+	.card{
+		flex-basis: 100%;
 	}
 
 }
