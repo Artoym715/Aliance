@@ -43,6 +43,9 @@ html{
 	.slider-buttons{
 		display: flex;
 	}
+	.steps-buttons{
+		display: flex;
+	}
 }
 
 /* md <= Large (lg) */
@@ -178,7 +181,6 @@ html{
 	.close-menu .mobile-menu-line:nth-child(3){
 		transform: rotate(-45deg) translateY(-10px);
 	}
-
 }
 
 /* sm <= Medium (md) */
