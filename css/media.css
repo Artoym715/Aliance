@@ -49,6 +49,9 @@ html{
 	.card{
 		flex-basis: 50%;
 	}
+	.trademark-card{
+		grid-template-columns: auto auto;
+	}
 }
 
 /* md <= Large (lg) */
@@ -184,6 +187,9 @@ html{
 	.close-menu .mobile-menu-line:nth-child(3){
 		transform: rotate(-45deg) translateY(-10px);
 	}
+	.trademark-cadrds{
+		flex-direction: column;
+	}
 }
 
 /* sm <= Medium (md) */
@@ -213,6 +219,11 @@ html{
 	}
 	.card{
 		flex-basis: 100%;
+	}
+
+	.trademark-card{
+		grid-template-areas: "logo title" "text text";
+		align-items: center;
 	}
 
 }
