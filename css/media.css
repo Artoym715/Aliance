@@ -52,6 +52,12 @@ html{
 	.trademark-card{
 		grid-template-columns: auto auto;
 	}
+	.founder-content{
+		max-width: 35rem;
+	}
+	.clients-content{
+		flex-basis: 60%;
+	}
 }
 
 /* md <= Large (lg) */
@@ -203,6 +209,18 @@ html{
 	.header-content{
 		padding-top: 3rem;
 	}
+	.founder-photo{
+		position: relative;
+		width: 100%;
+		margin-bottom: 3.125rem;
+	}
+	.founder-content{
+		max-width: 100%;
+	}
+
+	.clients-wrapper{
+		flex-direction: column;
+	}
 
 }
 
@@ -224,6 +242,12 @@ html{
 	.trademark-card{
 		grid-template-areas: "logo title" "text text";
 		align-items: center;
+	}
+	.clients-list {
+		columns: 1;
+	}
+	.clients-logo-item{
+		flex-basis: 50%;
 	}
 
 }

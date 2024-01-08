@@ -50,12 +50,17 @@ const swiperSteps = new Swiper('.steps-slider', {
 		// when window width is >= 320px
 		320: {
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 20,
+		},
+		// when window width is >= 576px
+		425: {
+			slidesPerView: 1,
+			spaceBetween: 20,
 		},
 		// when window width is >= 576px
 		576: {
 			slidesPerView: 2,
-			spaceBetween: 0,
+			spaceBetween: 30,
 		},
 		// when window width is >= 768px
 		768: {
