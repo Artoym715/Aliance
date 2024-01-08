@@ -58,6 +58,12 @@ html{
 	.clients-content{
 		flex-basis: 60%;
 	}
+	.primary-buttons-wrapper{
+		height: 40px;
+	}
+	.primary-button-prev, .primary-button-next{
+		width: 60px;
+	}
 }
 
 /* md <= Large (lg) */
