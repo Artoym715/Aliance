@@ -498,14 +498,13 @@ position: relative;
 	flex-basis: 33%;
 	border: 1px solid #EBEBF0;
 	padding: 1rem;
+	filter: grayscale(100%);
+}
+.clients-logo-item:hover{
+	filter: grayscale(0);
+	transition: filter 0.2s;
 }
 .clients-logo {
 	width: 70px;
 	height: 70px;
-	filter: grayscale(100%);
-}
-.clients-logo:hover{
-	filter: grayscale(0);
-	cursor: pointer;
-	transition: filter 0.2s;
 }
