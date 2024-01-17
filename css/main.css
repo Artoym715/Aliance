@@ -671,3 +671,128 @@ position: relative;
 	line-height: 160%;
 	color:#828A99; 
 }
+
+.footer-top {
+	padding-top: 3.125rem;
+	padding-bottom: 3.125rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	width: 12.5rem;
+	height: 3.75rem;
+}
+.footer-phone {
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 160%; /* 51.2px */
+	text-decoration-line: underline;
+	color:#292D33;
+}
+.footer-info {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-style: normal;
+	color:#292D33;
+	gap: .625rem;
+}
+.footer-info-address,
+.footer-info-email{
+	font-style: inherit;
+	text-decoration: inherit;
+	color:inherit;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 160%;
+}
+.footer-social {
+	text-decoration: none;
+}
+.footer-social-link {
+	text-decoration: none;
+
+}
+.footer-seporator{
+	color:#EBEBF0;
+	height: .0625rem;
+}
+.footer-bottom {
+	display: flex;
+	padding-top: 3.125rem;
+	padding-bottom: 3.125rem;
+}
+.footer-menu-wrapper:last-child {
+	margin-left: 5rem;
+}
+.footer-menu-title {
+	margin-top: 0;
+	margin-bottom: 1.875rem;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 160%;
+	color:#292D33;
+}
+.footer-menu-list {
+	margin: 0;
+	padding-left: 1.25rem;
+	list-style: none;
+}
+.footer-menu-column-2{
+	columns: 20rem auto;
+	min-width: 50rem;
+}
+
+.footer-menu-link {
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 160%;
+	color:#828A99;
+	margin-bottom: .9375rem;
+	display: block; 
+}
+.footer-menu-link-bold{
+	color: #292D33;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 160%; /* 25.6px */
+	margin-bottom: 1.875rem;
+}
+
+.footer-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+.footer-legal{
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	gap: 4.375rem;
+	margin: 0;
+}
+.copyright {
+	color:#828A99;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 160%; /* 19.2px */
+}
+.footer-policy {
+	color:#828A99;
+	font-size: .75rem;
+	font-weight: 400;
+	line-height: 160%; /* 19.2px */
+	text-decoration-line: underline;
+}
+.made-in{
+	color:#828A99;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 160%; /* 19.2px */
+}
