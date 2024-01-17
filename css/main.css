@@ -782,6 +782,7 @@ position: relative;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 160%; /* 19.2px */
+	margin: 0;
 }
 .footer-policy {
 	color:#828A99;
