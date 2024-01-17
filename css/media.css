@@ -64,6 +64,9 @@ html{
 	.primary-button-prev, .primary-button-next{
 		width: 60px;
 	}
+	.cta-image{
+		left: -6.25rem;
+	}
 }
 
 /* md <= Large (lg) */
@@ -227,6 +230,12 @@ html{
 	.clients-wrapper{
 		flex-direction: column;
 	}
+	.cta-image{
+		display: none;
+	}
+	.cta-form-wrapper {
+		justify-content: center;
+	}
 
 }
 
@@ -254,6 +263,15 @@ html{
 	}
 	.clients-logo-item{
 		flex-basis: 50%;
+	}
+	.input-group-wrapper  {
+		flex-direction: column;
+	}
+	.cta-form-footer{
+		flex-direction: column;
+	}
+	.cta-form-button{
+		width: 100%;
 	}
 
 }
