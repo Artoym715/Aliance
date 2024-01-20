@@ -2,6 +2,10 @@ const navbar = document.querySelector(".navbar");
 const logo = document.querySelector(".logo-svg use");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
+const modal = document.querySelector(".modal");
+const modalToogle = document.querySelectorAll('[data-toggle="modal"]');
+const modalClose = document.querySelector(".modal-close");
+
 
 const lightModeOn = (event) => {
 	navbar.classList.add("navber-light");
@@ -147,3 +151,15 @@ const swiperBlog = new Swiper('.blog-slider', {
 	},
 
 });
+
+modalToogle.forEach(element => {
+	element.addEventListener("click", (event => {
+		event.preventDefault();
+		modal.classList.add("is-open");
+	}))
+});
+
+modalClose.addEventListener("click", (event => {
+	event.preventDefault();
+	modal.classList.remove("is-open");
+}));
