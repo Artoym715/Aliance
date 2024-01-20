@@ -4,6 +4,7 @@ const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 const modal = document.querySelector(".modal");
 const modalDialog = document.querySelector(".modal-dilog");
+const isFront = document.body.classList.contains("front-page");
 
 
 const lightModeOn = (event) => {
@@ -14,6 +15,10 @@ const lightModeOn = (event) => {
 const lightModeOff = (event) => {
 	navbar.classList.remove("navber-light");
 	logo.href.baseVal = "img/sprite.svg#logo-light";
+}
+
+const changeNavHeight = (height) => {
+	navbar.style.height = height;
 }
 
 const openMenu = (event) => { // Открытие меню 
@@ -32,7 +37,10 @@ const closeMenu = (event) => { // Закрытие меню
 
 
 window.addEventListener("scroll", () => {
-	this.scrollY > 1 ? lightModeOn() : lightModeOff();
+	this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+	if (isFront) {
+		this.scrollY > 1 ? lightModeOn() : lightModeOff();
+	}
 });
 mMenuToggle.addEventListener("click", (event) => {
 	event.preventDefault();

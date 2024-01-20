@@ -92,7 +92,9 @@ position: relative;
 .navber-light{
 	background-color:#fff;
 	color:#292D33;
-	height: 4.625rem;
+}
+.navbar-scroll{
+ height: 4.625rem;
 }
 .navber-light .header-logo-path{
 	fill: #292D33;
