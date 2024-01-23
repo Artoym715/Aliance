@@ -876,3 +876,14 @@ position: relative;
 	width: 100%;
 	margin-bottom: 24px;
 }
+.just-validate-error-label{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	background-color: inherit;
+	transform: translateY(-50%);
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 0.8rem;
+	display:inline-block;
+}

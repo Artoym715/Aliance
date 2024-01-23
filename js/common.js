@@ -5,6 +5,7 @@ const menu = document.querySelector(".mobile-menu");
 const modal = document.querySelector(".modal");
 const modalDialog = document.querySelector(".modal-dilog");
 const isFront = document.body.classList.contains("front-page");
+const forms = document.querySelectorAll("form"); // Собираем все формы
 
 
 const lightModeOn = (event) => {
@@ -172,4 +173,46 @@ document.addEventListener("keyup", (event) => {
 	if (event.key == "Escape" && modal.classList.contains("is-open")) {
 		modal.classList.toggle("is-open");
 	}
+});
+
+forms.forEach((form) => {
+	const validation = new JustValidate(form, {
+		errorFieldCssClass: 'is-invalid',
+	});
+	validation
+		.addField('[name=username]', [
+			{
+				rule: 'required',
+				errorMessage: 'Укажите имя'
+			},
+			{
+				rule: 'maxLength',
+				value: 50,
+				errorMessage: 'Максимальное кол-во символов 50'
+			},
+		])
+		.addField('[name="userphone"]', [
+			{
+				rule: 'required',
+				errorMessage: 'Укажите телефон'
+			},
+		])
+		.onSuccess((event) => {
+			const thisForm = event.target; // Наша форма
+			const formData = new FormData(thisForm); // Данные из нашей формы
+			const ajaxSend = (formData) => {
+				fetch(thisForm.getAttribute("action"), {
+					method: thisForm.getAttribute("method"),
+					body: formData,
+				}).then((response) => {
+					if (response.ok) {
+						thisForm.reset();
+						alert("Форма отправлена!");
+					} else {
+						alert(response.statusText);
+					}
+				});
+			};
+			ajaxSend(formData);
+		});
 });
