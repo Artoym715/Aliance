@@ -887,3 +887,24 @@ position: relative;
 	font-size: 0.8rem;
 	display:inline-block;
 }
+
+.modal-sucsess-title{
+	color: #292D33;
+	font-family: "Bebas Neue Book";
+	font-size: 3rem;
+	font-weight: 400;
+	line-height: 120%; /* 57.6px */
+	margin-left: -10px;
+}
+.modal-sucsess-text{
+	color: #828A99;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 160%; /* 25.6px */
+	padding-top: 1.25rem;
+}
+
+.modal-sucsess-button{
+	width: 100%;
+	text-decoration: none;
+}

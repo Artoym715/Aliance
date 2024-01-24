@@ -10,7 +10,7 @@
 				</p>
 				<div class="input-group-wrapper">
 					<div class="input-group">
-						<input id="user-name" type="text" name="username" class="input" placeholder=" ">
+						<input id="user-name" type="text" name="username" class="input" placeholder=" " required>
 						<label class="input-group-label" for="user-name">Имя</label>
 					</div>
 					<!-- /.input-group -->
@@ -177,6 +177,21 @@
 				</div>
 			</div>
 		</form>
+	</div>
+</div>
+<div class="modal sucsess">
+	<div class="modal-dilog">
+		<h2 class="modal-sucsess-title">Спасибо за заявку!</h2>
+		<img src="img/thanks.png" width="360" height="310" alt="thanks">
+		<a href="" class="modal-close">
+			<svg class="close-icon" width="24" height="24">
+				<use href="img/sprite.svg#close"></use>
+			</svg>
+		</a>
+		<p class="modal-sucsess-text">
+			Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+		</p>
+		<a href="/" class="button modal-sucsess-button">Вернуться на главную</a>
 	</div>
 </div>
 <!--Swiper-->

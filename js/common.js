@@ -6,6 +6,7 @@ const modal = document.querySelector(".modal");
 const modalDialog = document.querySelector(".modal-dilog");
 const isFront = document.body.classList.contains("front-page");
 const forms = document.querySelectorAll("form"); // Собираем все формы
+const modalSucsess = document.querySelector(".sucsess");
 
 
 const lightModeOn = (event) => {
@@ -207,7 +208,7 @@ forms.forEach((form) => {
 				}).then((response) => {
 					if (response.ok) {
 						thisForm.reset();
-						alert("Форма отправлена!");
+						modalSucsess.classList.toggle("is-open");
 					} else {
 						alert(response.statusText);
 					}
