@@ -137,10 +137,10 @@
 	<!-- /.container -->
 </footer>
 <!-- /.footer -->
-<div class="modal">
+<div class="modal" id="feedback-modal">
 	<div class="modal-dilog">
 		<h2 class="modal-title">Есть вопросы?</h2>
-		<a href="" class="modal-close">
+		<a href="" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
 			<svg class="close-icon" width="24" height="24">
 				<use href="img/sprite.svg#close"></use>
 			</svg>
@@ -179,10 +179,10 @@
 		</form>
 	</div>
 </div>
-<div class="modal sucsess">
+<div class="modal" id="alert-modal">
 	<div class="modal-dilog">
 		<img src="img/thanks.png" width="360" height="310" alt="thanks">
-		<a href="" class="modal-close">
+		<a href="" class="modal-close" data-toggle="modal" data-target="#alert-modal">
 			<svg class="close-icon" width="24" height="24">
 				<use href="img/sprite.svg#close"></use>
 			</svg>

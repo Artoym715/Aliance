@@ -2,11 +2,12 @@ const navbar = document.querySelector(".navbar");
 const logo = document.querySelector(".logo-svg use");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dilog");
+let currentModal;
+let modalDialog;
+let alertModal = document.querySelector("#alert-modal");
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
 const isFront = document.body.classList.contains("front-page");
 const forms = document.querySelectorAll("form"); // Собираем все формы
-const modalSucsess = document.querySelector(".sucsess");
 
 
 const lightModeOn = (event) => {
@@ -161,18 +162,23 @@ const swiperBlog = new Swiper('.blog-slider', {
 
 });
 
-document.addEventListener("click", event => {
-	if (
-		event.target.dataset.toggle == "modal" || event.target.parentNode.dataset.toggle == "modal" ||
-		!event.composedPath().includes(modalDialog) && modal.classList.contains("is-open")
-	) {
+modalButtons.forEach((button) => {
+	button.addEventListener("click", (event) => {
 		event.preventDefault();
-		modal.classList.toggle("is-open");
-	}
+		currentModal = document.querySelector(button.dataset.target);
+		currentModal.classList.toggle("is-open");
+		modalDialog = currentModal.querySelector(".modal-dilog");
+		currentModal.addEventListener("click", (event) => {
+			if (!event.composedPath().includes(modalDialog)) {
+				currentModal.classList.remove("is-open");
+			}
+		});
+	});
 });
+
 document.addEventListener("keyup", (event) => {
-	if (event.key == "Escape" && modal.classList.contains("is-open")) {
-		modal.classList.toggle("is-open");
+	if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+		currentModal.classList.toggle("is-open");
 	}
 });
 
@@ -208,7 +214,15 @@ forms.forEach((form) => {
 				}).then((response) => {
 					if (response.ok) {
 						thisForm.reset();
-						modalSucsess.classList.toggle("is-open");
+						currentModal.classList.remove("is-open");
+						alertModal.classList.add("is-open");
+						currentModal = alertModal;
+						modalDialog = currentModal.querySelector(".modal-dilog");
+						currentModal.addEventListener("click", (event) => {
+							if (!event.composedPath().includes(modalDialog)) {
+								currentModal.classList.remove("is-open");
+							}
+						})
 					} else {
 						alert(response.statusText);
 					}

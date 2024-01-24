@@ -125,7 +125,7 @@
 				<a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
 			</div>
 			<!-- /.header-phone -->
-			<button class="header-button button" data-toggle="modal">
+			<button class="header-button button" data-toggle="modal" data-target="#feedback-modal">
 				<svg class="button-icon" width="24" height="24">
 					<use href="img/sprite.svg#phone"></use>
 				</svg>
@@ -214,7 +214,7 @@
 						<h3 class="steps-title">Знакомство</h3>
 						<p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
 							воздействия.</p>
-						<a href="#" class="button-link" data-toggle="modal">Оставить заявку</a>
+						<a href="#" class="button-link" data-toggle="modal" data-target="#feedback-modal">Оставить заявку</a>
 					</li>
 					<li class="swiper-slide steps-item">
 						<span class="steps-num">02</span>
