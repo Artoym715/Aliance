@@ -17,15 +17,16 @@
 
 /* FONTS LOAD SECTION */
 
-@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; }
-@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
-@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
-@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
+@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; font-display: swap; }
 
 @font-face {
 	font-family: 'Bebas Neue Book';
 	src:url('../fonts/BebasNeueBook.woff') format('woff');
 	font-weight: normal;
+	font-display: swap;
 	font-style: normal;
 	}
 
