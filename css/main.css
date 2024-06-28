@@ -17,15 +17,16 @@
 
 /* FONTS LOAD SECTION */
 
-@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; }
-@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
-@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
-@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
+@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; font-display: swap; }
 
 @font-face {
 	font-family: 'Bebas Neue Book';
 	src:url('../fonts/BebasNeueBook.woff') format('woff');
 	font-weight: normal;
+	font-display: swap;
 	font-style: normal;
 	}
 
@@ -875,4 +876,36 @@ position: relative;
 	display: block;
 	width: 100%;
 	margin-bottom: 24px;
+}
+.just-validate-error-label{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	background-color: inherit;
+	transform: translateY(-50%);
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 0.8rem;
+	display:inline-block;
+}
+
+.modal-sucsess-title{
+	color: #292D33;
+	font-family: "Bebas Neue Book";
+	font-size: 3rem;
+	font-weight: 400;
+	line-height: 120%; /* 57.6px */
+	margin-left: -10px;
+}
+.modal-sucsess-text{
+	color: #828A99;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 160%; /* 25.6px */
+	padding-top: 1.25rem;
+}
+
+.modal-sucsess-button{
+	width: 100%;
+	text-decoration: none;
 }
